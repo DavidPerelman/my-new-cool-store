@@ -5,13 +5,14 @@ import Card from '../../UI/Card/Card';
 import Button from '../../UI/Button/Button';
 
 const CategoryContainer = ({ category }) => {
+  const onCategoryClick = () => {
+    console.log(category);
+  };
+
   return (
-    <div
-      className={classes.CategoryContainer}
-      //   style={{ backgroundColor: `${category.color}` }}
-    >
+    <div className={classes.CategoryContainer}>
       <header>
-        <Button>
+        <Button onClick={onCategoryClick}>
           <>
             Our {category.name.charAt(0).toUpperCase() + category.name.slice(1)}
           </>
@@ -22,7 +23,6 @@ const CategoryContainer = ({ category }) => {
           return <Card key={product.id} product={product} />;
         })}
       </main>
-      {/* <footer>footer</footer> */}
     </div>
   );
 };

@@ -24,3 +24,16 @@
 .container {
   padding: 2px 16px;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: 90%;
+    flex-direction: row;
+  }
+
+  .card:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    width: 90%;
+  }
+}

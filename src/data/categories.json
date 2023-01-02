@@ -1,17 +1,14 @@
 [
   {
     "id": 1,
-    "name": "clothes",
-    "color": "red"
+    "name": "clothes"
   },
   {
     "id": 2,
-    "name": "jewelery",
-    "color": "blue"
+    "name": "jewelery"
   },
   {
     "id": 3,
-    "name": "electronics",
-    "color": "green"
+    "name": "electronics"
   }
 ]
