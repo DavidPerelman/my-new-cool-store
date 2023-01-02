@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import HeaderIcon from '../../Cart/HeaderIcon/HeaderIcon';
+import HeaderIcon from '../HeaderIcon/HeaderIcon';
 import classes from './HeaderCartButton.module.css';
 
 const HeaderCartButton = () => {
