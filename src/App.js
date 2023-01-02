@@ -23,10 +23,10 @@ function App() {
     <Fragment>
       {cartIsShown && <Cart onCloseCart={hideCartHandler} />}
 
-      <div>
-        <Header onShowCart={showCartHandler} onHideCart={hideCartHandler} />
-      </div>
-      <div style={{ marginTop: '4rem' }}>
+      <Header onShowCart={showCartHandler} onHideCart={hideCartHandler} />
+      <div
+        style={{ marginTop: '4rem', display: 'flex', flexDirection: 'column' }}
+      >
         {categories.map((category) => {
           return <CategoryContainer key={category.id} category={category} />;
         })}

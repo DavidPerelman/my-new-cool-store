@@ -4,12 +4,22 @@ import classes from './CategoryContainer.module.css';
 const CategoryContainer = ({ category }) => {
   console.log(category);
   return (
-    <main
+    <div
       className={classes.CategoryContainer}
       style={{ backgroundColor: `${category.color}` }}
     >
-      {category.name}
-    </main>
+      <header>
+        <h2>Our {category.name}</h2>
+      </header>
+      <main className={classes.main}>
+        <h2>main</h2>
+        <h2>main</h2>
+        <h2>main</h2>
+        <h2>main</h2>
+        <h2>main</h2>
+      </main>
+      <footer>footer</footer>
+    </div>
   );
 };
 
