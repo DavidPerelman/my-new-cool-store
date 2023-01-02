@@ -2,15 +2,12 @@ import React, { Fragment, useState } from 'react';
 import Cart from './components/Cart/Cart/Cart';
 import CategoryContainer from './components/Layout/CategoryContainer/CategoryContainer';
 import Header from './components/Layout/Header/Header';
+// import products from './data/products.json';
+import categories from './data/categories.json';
 
 function App() {
   const [cartIsShown, setCartIsShown] = useState(false);
-
-  const categories = [
-    { id: 1, name: 'Clothes', color: 'red' },
-    { id: 2, name: 'Shoes', color: 'blue' },
-    { id: 3, name: 'Electronics', color: 'green' },
-  ];
+  // console.log(products);
 
   const showCartHandler = () => {
     setCartIsShown(true);

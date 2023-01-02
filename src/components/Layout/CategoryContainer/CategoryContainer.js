@@ -1,8 +1,10 @@
 import React from 'react';
 import classes from './CategoryContainer.module.css';
+import products from '../../../data/products/clothes.json';
+import Card from '../../UI/Card/Card';
 
 const CategoryContainer = ({ category }) => {
-  console.log(category);
+  console.log(products);
   return (
     <div
       className={classes.CategoryContainer}
@@ -12,11 +14,9 @@ const CategoryContainer = ({ category }) => {
         <h2>Our {category.name}</h2>
       </header>
       <main className={classes.main}>
-        <h2>main</h2>
-        <h2>main</h2>
-        <h2>main</h2>
-        <h2>main</h2>
-        <h2>main</h2>
+        {products.map((product) => {
+          return <Card key={product.id} product={product} />;
+        })}
       </main>
       <footer>footer</footer>
     </div>
